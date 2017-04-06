@@ -4,12 +4,14 @@ public class E4_for_Loop
 {
     public static void main(String[] args)
     {
-        int[] numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        String[] bF = { "B ", "B ", "B ", "B ", "B ", "B ", "B ", "B ", "B ","B ", "B ", "B ", "B ", "B ", "B ", "B ", "B ", "B ",};
+         for ( int i = 0; i < bF.length; i+=6)
+         {
+             System.out.println(bF[i] + bF[i+1] + bF[i+2] + bF[i+3] + bF[i+4] + bF[i+5]);
 
-        for (int i = 0; i < numbers.length; i++)
-        {
-            int n = numbers[i];
-            System.out.println(n);
-        }        
+         }
+
+
+
     }
 }

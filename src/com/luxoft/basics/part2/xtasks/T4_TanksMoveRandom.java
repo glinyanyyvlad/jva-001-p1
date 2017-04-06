@@ -22,9 +22,59 @@ public class T4_TanksMoveRandom extends JPanel
      * @param direction can be 1 - up, 2 - right, 3 - down, 4 - right
      */
     void move(int direction)
-    {
-        // TODO SHOULD BE IMPLEMENTED IN CLASS
+
+        {
+            {
+
+                if ( direction == 1 && tankY != 0)
+                {
+                    moveUp();
+                }
+
+                if (direction == 2 && tankX != 512 )
+                {
+                    moveRight();
+                }
+                if (direction == 3 && tankY != 512)
+                {
+                    moveBack();
+                }
+                if (direction == 4 && tankX != 0)
+                {
+                    moveLeft();
+                }
+
+            }
+        }
+
+
+
+        void moveRight()
+        {
+            tankX += 64;
+            repaint();
+            sleep(350);
+        }
+        void moveLeft()
+        {
+            tankX -= 64;
+            repaint();
+            sleep(350);
+        }
+        void moveUp() {
+
+        tankY -= 64;
+        repaint();
+        sleep(350);
     }
+        void moveBack() {
+
+
+        tankY += 64;
+        repaint();
+        sleep(350);
+    }// TODO SHOULD BE IMPLEMENTED IN CLASS
+
 
     void randomMove()
     {

@@ -1,5 +1,7 @@
 package com.luxoft.basics.part3.xtasks;
 
+import java.util.Arrays;
+
 public class T2_BattleField
 {
 
@@ -7,15 +9,15 @@ public class T2_BattleField
      * TODO PUT YOUR DESIGN HERE
      */
     String[][] battleField = {
-            {" ", " ", " ", " ", " ", " ", " ", " ", " "},
-            {" ", " ", " ", " ", " ", " ", " ", " ", " "},
-            {" ", " ", " ", " ", " ", " ", " ", " ", " "},
-            {" ", " ", " ", " ", " ", " ", " ", " ", " "},
-            {" ", " ", " ", " ", " ", " ", " ", " ", " "},
-            {" ", " ", " ", " ", " ", " ", " ", " ", " "},
-            {" ", " ", " ", " ", " ", " ", " ", " ", " "},
-            {" ", " ", " ", " ", " ", " ", " ", " ", " "},
-            {" ", " ", " ", "T", "E", " ", " ", " ", " "}
+            {"B ", "  ", "B ", "B ", "B ", "B ", "B ", "B ", "B "},
+            {"  ", "B ", "B ", "B ", "B ", "B ", "B ", "  ", "B "},
+            {"B ", "B ", "B ", "B ", "B ", "B ", "B ", "B ", "B "},
+            {"B ", "B ", "B ", "B ", "B ", "B ", "B ", "B ", "B "},
+            {"B ", "B ", "B ", "B ", "B ", "B ", "B ", "B ", "B "},
+            {"B ", "  ", "B ", "B ", "B ", "B ", "B ", "  ", "B "},
+            {"B ", "B ", "B ", "B ", "B ", "B ", "B ", "B ", "B "},
+            {"B ", "B ", "B ", "  ", "B ", "B ", "B ", "B ", "  "},
+            {"B ", "B ", "  ", "T ", "E ", "B ", "B ", "B ", "B "}
     };
 
     void runTheGame() throws Exception
@@ -28,8 +30,13 @@ public class T2_BattleField
      */
     private void printCurrentBattleField()
     {
-        // TODO YOUR CODE HERE
-    }
+        for (int i = 0; i < battleField.length ; i+=1)
+        {
+            System.out.println(Arrays.toString(battleField[i]) );
+        }
+
+        }
+
 
 
     // Magic bellow. Do not worry about this now, you will understand everything in this course.

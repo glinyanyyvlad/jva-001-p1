@@ -4,11 +4,10 @@ public class E3_for_each_Loop
 {
     public static void main(String[] args)
     {
-        int[] numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        String[] bF = { "B B B B", "B   B B ", "B B B B", "B T E B"};
 
-        for (int n : numbers)
-        {
-            System.out.println(n);
+        for (String s : bF)          {
+
         }
     }
 }

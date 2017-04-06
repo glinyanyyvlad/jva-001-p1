@@ -32,30 +32,56 @@ public class T3_TanksMove extends JPanel
      */
     void move(int direction)
     {
-                // TODO YOUR CODE HERE
+        {
+
+            if ( direction == 1 && tankY != 0)
+            {
+                moveUp();
+            }
+
+            if (direction == 2 && tankX != 512 )
+            {
+                moveRight();
+            }
+            if (direction == 3 && tankY != 512)
+            {
+                moveBack();
+            }
+            if (direction == 4 && tankX != 0)
+            {
+                moveLeft();
+            }
+
+        }
     }
-    void moveRight()  // 2
+
+
+
+    void moveRight()
     {
         tankX += 64;
         repaint();
-        sleep(150);
+        sleep(350);
     }
-    void moveLeft() // 4
+    void moveLeft()
     {
         tankX -= 64;
         repaint();
-        sleep(150);
+        sleep(350);
     }
-    void moveUp() {  // 1
-        tankY += 64;
-        repaint();
-        sleep(150);
-    }
-     void moveBack() { // 3
+    void moveUp() {
+
         tankY -= 64;
         repaint();
-        sleep(150);
-     }
+        sleep(350);
+    }
+    void moveBack() {
+
+
+        tankY += 64;
+        repaint();
+        sleep(350);
+    }
 
 
     // Magic bellow. Do not worry about this now, you will understand everything in this course.

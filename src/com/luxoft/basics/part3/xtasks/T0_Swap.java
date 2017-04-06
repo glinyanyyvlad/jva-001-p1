@@ -12,6 +12,7 @@ public class T0_Swap
 
         swap(numbers, 1, 4);
         swap(numbers, 2, 7);
+        swap(numbers, 3, 5);
         System.out.println(Arrays.toString(numbers));
     }
 
@@ -22,6 +23,10 @@ public class T0_Swap
      */
     public static void swap(int[] data, int idx1, int idx2)
     {
-        // TODO YOUR CODE HERE
+         int a = data[idx1];
+         int b = data[idx2];
+         data[idx1] = data[idx2];
+
+
     }
 }

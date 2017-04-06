@@ -65,6 +65,18 @@ public class T3_TanksFire extends JPanel
     {
         // TODO YOUR CODE HERE
     }
+    void moveUp() {
+
+        tankY -= 64;
+        repaint();
+        sleep(350);
+    }
+    void bulletMove (int tankX, int tankY)
+    {
+        int bulletX = tankX;
+        int bulletY = tankY;
+    }
+
 
     private void printCurrentBattleField()
     {
@@ -88,6 +100,8 @@ public class T3_TanksFire extends JPanel
     {
         tankDirection = direction;
         repaint();
+
+
     }
 
     // Magic bellow. Do not worry about this now, you will understand everything in this course.
